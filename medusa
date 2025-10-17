@@ -1,0 +1,28 @@
+🐍 Medusa – Ferramenta de Teste de Força Bruta
+
+Medusa é uma ferramenta de login brute-force amplamente utilizada em auditorias de segurança e pentests. Seu principal objetivo é testar a robustez de autenticações em diferentes protocolos e serviços, como HTTP, FTP, SSH, MySQL, SMB e outros.
+
+⚙️ Principais características
+
+Alta performance: permite execução em múltiplas threads, testando diversos logins simultaneamente.
+
+Suporte a diversos serviços: compatível com protocolos como ftp, ssh, telnet, smb, http, rlogin, mysql, vnc, entre outros.
+
+Customização: aceita listas de usuários (-U) e senhas (-P), possibilitando ataques direcionados.
+
+Modularidade: cada protocolo é tratado como um módulo independente, facilitando atualizações e extensões.
+
+🧠 Exemplo de uso
+medusa -h 192.168.56.102 -u admin -P passwords.txt -M http
+
+
+Esse comando tenta autenticar o usuário admin no host alvo (192.168.56.102) usando o módulo HTTP e a lista de senhas passwords.txt.
+
+⚠️ Aviso importante
+
+O Medusa deve ser usado somente em ambientes autorizados, como laboratórios pessoais ou testes de segurança com permissão explícita.
+O uso indevido para acessar sistemas de terceiros é ilegal e pode resultar em sanções criminais.
+
+🔍 Exemplo de cenário de aprendizado
+
+Na imagem acima, o Medusa foi utilizado em um ambiente de teste local (192.168.56.102) para simular tentativas de login e verificar quais senhas fracas poderiam ser quebradas — uma prática comum em laboratórios de cybersecurity para demonstrar a importância de políticas de senha seguras.
